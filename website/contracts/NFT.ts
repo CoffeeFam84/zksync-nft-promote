@@ -5,5 +5,5 @@ const ABI = require('./NFT.json');
 
 export default function getNFTContract(provider: Web3Provider) {
   // TODO: fill this out
-  return new Contract('NFT_CONTRACT_ADDRESS', ABI, provider.getSigner());
+  return new Contract('0xEe359c57bcd7F0152fEa7674C49B1b92f2B19aA0', ABI, provider.getSigner());
 }

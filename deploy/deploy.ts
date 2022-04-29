@@ -1,6 +1,7 @@
 import { Wallet, Provider } from "zksync-web3";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { Deployer } from "@matterlabs/hardhat-zksync-deploy";
+require('dotenv').config();
 
 // set your private key
 // you can generate one using `yarn generate-private-key`
@@ -24,6 +25,14 @@ interface CONTRACT {
 // contracts to be deployed
 const CONTRACTS: CONTRACT[] = [
   // TODO: enter contracts
+  {
+    name: 'Display',
+    args: ['0x5C221E77624690fff6dd741493D735a17716c26B']
+  },
+  {
+    name: 'NFT',
+    args: []
+  }
 ]
 
 // this function will deploy both contracts at the same time.

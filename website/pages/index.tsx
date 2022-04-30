@@ -72,12 +72,12 @@ class App extends React.Component<IProps, IState> {
       // TODO: adjust this if needed
       feeToken: {
         symbol: 'ETH',
-        address: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+        address: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
         decimals: 18,
       },
       paymentToken: {
         symbol: 'ETH',
-        address: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+        address: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
         decimals: 18,
       },
 
@@ -112,7 +112,7 @@ class App extends React.Component<IProps, IState> {
       const txHandle = await nftContract.mintNFT(imageUrl, {
         // set the custom feeToken
         customData: {
-          feeToken: feeToken.address,
+          feeToken: feeToken.address
         },
       });
   
